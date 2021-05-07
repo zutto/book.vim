@@ -1,6 +1,6 @@
 Book is a neovim plugin, written in lua.
 
-Execute snippets within lua, just by inserting a shebang line under your code. (see asciinema recording below)
+Execute snippets of code/scripts within your neovim session, just by inserting a shebang line under your code. (see asciinema recording below)
 
 --
 
