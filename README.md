@@ -29,8 +29,7 @@ Just insert a shebang line without command to split the output.
 echo "Hello World!";    
 #!    
 echo "foo bar!";    
-#!/bin/bash         
-# Hello World!
+#!/bin/bash
 # foo bar!
 ```
 
