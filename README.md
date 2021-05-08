@@ -9,7 +9,7 @@ Vim plugin to evaluate scripts & code inline with ease!
 * Configurable!
 * Evaluate multiple chunks of code
 * Evaluate output of previous code chunk in a following chunk! (* note: theres probably bugs with this)
-* Code is stil
+* Code is still usable outside of vim!
 
 ## Usage
 Just write `#!/bin/bash` and run :Book to get output! ( asciinema recording explains better than thousand words!)
