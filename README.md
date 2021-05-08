@@ -23,14 +23,17 @@ Just write `#!/bin/bash` and run :Book to get output! ( asciinema recording expl
 
 #### want to have code cut from the chunk? not a problem.
 Just insert a shebang line without command to split the output.
+
 ```
 #!/bin/bash
 echo "Hello World!";    
 #!    
 echo "foo bar!";    
 #!/bin/bash         
-# /bin/bash: line 1: unexpected EOF while looking for matching `''
-# /bin/bash: line 24: syntax error: unexpected end of file
+# Hello World!
+# foo bar!
+```
+
 
 ##  Configuration
 #### Basic settings
