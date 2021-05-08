@@ -91,7 +91,27 @@ augroup book_settings
     
 augroup end    
 ```
-
+#### Compiled language?
+Heres an example of a script I made for golang, modify it for your own usage, and add it tosomewhere in your env and refer to it in your shebang.
+```
+#!/bin/bash    
+#disable gomod    
+GO111MODULE=off    
+    
+##create temp file and redirect STDIN to it    
+TMP=$(mktemp "/dev/shm/XXXXXXXXXXXXXXXXX.go");    
+while read -r line; do echo "$line" >> "$TMP"; done    
+shift;    
+#evaluate code & acquire exitcode    
+go run "$TMP" ${@/#/};    
+ec=$?;    
+    
+#clear tmp    
+rm "$TMP"    
+    
+#exit with go run exit code    
+exit $ec;
+```
 
 
 ---
